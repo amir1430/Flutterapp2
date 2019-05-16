@@ -62,13 +62,16 @@ class _HomeState extends State<Home> {
                     TextField(
                       decoration: InputDecoration(
                         hintText: 'UserName',
-                        suffixIcon: Icon(Icons.person),
+                        suffixIcon: Icon(
+                          Icons.person,
+                          color: Colors.red[300],
+                        ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.all(
                             Radius.circular(15),
                           ),
                           borderSide: BorderSide(
-                            color: Colors.cyan,
+                            color: Colors.red[200],
                             width: 2.0,
                           ),
                         ),
@@ -95,13 +98,16 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                         hintText: 'Password',
-                        suffixIcon: Icon(Icons.vpn_key),
+                        suffixIcon: Icon(
+                          Icons.vpn_key,
+                          color: Colors.red[300],
+                        ),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.all(
                             Radius.circular(15),
                           ),
                           borderSide: BorderSide(
-                            color: Colors.cyan,
+                            color: Colors.red[200],
                             width: 2.0,
                           ),
                         ),
@@ -124,7 +130,7 @@ class _HomeState extends State<Home> {
                       child: MaterialButton(
                         minWidth: double.infinity,
                         height: 50,
-                        color: Colors.cyan,
+                        color: Colors.red[400],
                         child: Center(
                           child: Text(
                             'Login',
@@ -142,7 +148,7 @@ class _HomeState extends State<Home> {
                       child: Text(
                         'Forget Password',
                         style: TextStyle(
-                          color: Colors.lightBlueAccent,
+                          color: Colors.lightBlue,
                           fontSize: 15,
                         ),
                       ),
